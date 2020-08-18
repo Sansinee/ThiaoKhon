@@ -52,21 +52,24 @@ export default class Touchables extends Component {
 }
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 60,
-    alignItems: 'center'
+    paddingTop: 300,
+    alignItems: 'center',
+    backgroundColor: '#0D47A1',
   },
+  //text button*
   button: {
     marginBottom: 30,
     width: 260,
     alignItems: 'center',
-    backgroundColor: '#2196F3'
+    backgroundColor: '#80e2ff',
   },
+  //text input
   input: {
     margin: 15,
     height: 40,
     width: 260,
     borderColor: '#7a42f4',
-    borderWidth: 1
+    borderWidth: 1,
+    backgroundColor: 'white',
   },
 });
-
