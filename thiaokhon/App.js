@@ -36,7 +36,7 @@ export default class Touchables extends Component {
         <TextInput
           style={styles.input}
           underlineColorAndroid="transparent"
-          placeholder="Email"
+          placeholder="     Email"
           placeholderTextColor="#111111"
           autoCapitalize="none"
           onChangeText={(text) => this.setState({email: text})}
@@ -44,7 +44,7 @@ export default class Touchables extends Component {
         <TextInput
           style={styles.input}
           underlineColorAndroid="transparent"
-          placeholder="Password"
+          placeholder="     Password"
           placeholderTextColor="#111111"
           autoCapitalize="none"
           onChangeText={(text) => this.setState({password: text})}
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     width: 260,
     height: 30,
     alignItems: 'center',
-    backgroundColor: '#80e2ff',
+    backgroundColor: '#01579B',
   },
   //text input
   input: {
