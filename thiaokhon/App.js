@@ -8,7 +8,7 @@ import React from 'react';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-//Import all the screens needed
+//Import all the Screens needed
 import SplashScreen from './Screen/SplashScreen';
 import LoginScreen from './Screen/LoginScreen';
 import RegisterScreen from './Screen/RegisterScreen';
@@ -17,13 +17,13 @@ import DrawerNavigationRoutes from './Screen/DrawerNavigationRoutes';
 const Auth = createStackNavigator({
   //Stack Navigator for Login and Sign up Screen
   LoginScreen: {
-    screen: LoginScreen,
+    Screen: LoginScreen,
     navigationOptions: {
       headerShown: false,
     },
   },
   RegisterScreen: {
-    screen: RegisterScreen,
+    Screen: RegisterScreen,
     navigationOptions: {
       title: 'Register',
       headerStyle: {
@@ -34,12 +34,12 @@ const Auth = createStackNavigator({
   },
 });
 
-/* Switch Navigator for those screens which needs to be switched only once
+/* Switch Navigator for those Screens which needs to be switched only once
   and we don't want to switch back once we switch from them to the next one */
 const App = createSwitchNavigator({
   SplashScreen: {
     /* SplashScreen which will come once for 5 Seconds */
-    screen: SplashScreen,
+    Screen: SplashScreen,
     navigationOptions: {
       /* Hiding header for Splash Screen */
       headerShown: false,
@@ -47,11 +47,11 @@ const App = createSwitchNavigator({
   },
   Auth: {
     /* Auth Navigator which includer Login Signup will come once */
-    screen: Auth,
+    Screen: Auth,
   },
   DrawerNavigationRoutes: {
     /* Navigation Drawer as a landing page */
-    screen: DrawerNavigationRoutes,
+    Screen: DrawerNavigationRoutes,
     navigationOptions: {
       /* Hiding header for Navigation Drawer as we will use our custom header */
       headerShown: false,
