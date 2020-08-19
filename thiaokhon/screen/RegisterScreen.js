@@ -97,7 +97,7 @@ const RegisterScreen = (props) => {
           justifyContent: 'center',
         }}>
         <Image
-          source={require('../Image/success.png')}
+          source={require('../img/logo.png')}
           style={{height: 150, resizeMode: 'contain', alignSelf: 'center'}}
         />
         <Text style={styles.successTextStyle}>Registration Successful.</Text>
@@ -116,7 +116,7 @@ const RegisterScreen = (props) => {
       <ScrollView keyboardShouldPersistTaps="handled">
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../Image/aboutreact.png')}
+            source={require('../img/logo.png')}
             style={{
               width: '50%',
               height: 100,
