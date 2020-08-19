@@ -6,7 +6,7 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import Swiper from 'react-native-swiper';
 
-//style
+// style แม่งเอ้ย
 var styles = {
   wrapper: {},
   slide1: {
@@ -38,10 +38,17 @@ const HomeScreen = () => {
   global.currentScreenIndex = 'HomeScreen';
   return (
     <View style={{flex: 1, alignItems: 'center'}}>
-      add img for slide
+      {/* add img for slide */}
       <Swiper style={styles.wrapper} showsButtons loop={false}>
         <View testID="Hello" style={styles.slide1}>
           <Text style={styles.text}>Hello Swiper</Text>
+          {/* <Image
+            source={require('../img/logo01.png')}
+            style={{
+              width: '90%',
+              height: 150,
+            }}
+          /> */}
         </View>
         <View testID="Beautiful" style={styles.slide2}>
           <Text style={styles.text}>Beautiful</Text>

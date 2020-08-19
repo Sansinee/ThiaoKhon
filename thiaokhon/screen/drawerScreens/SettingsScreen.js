@@ -3,7 +3,7 @@
 
 //Import React
 import React from 'react';
-
+// มึนเว้ย
 //Import all required component
 import {View, Text} from 'react-native';
 
