@@ -3,8 +3,8 @@
 
 //Import React and Hooks we needed
 import React, {useState, useEffect} from 'react';
-// SplashScreen
-//Import all required component//
+
+//Import all required component
 import {ActivityIndicator, View, StyleSheet, Image} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -29,7 +29,7 @@ const SplashScreen = (props) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../img/logo.png')}
+        source={require('../img/logo01.png')}
         style={{width: '90%', resizeMode: 'contain', margin: 30}}
       />
       <ActivityIndicator

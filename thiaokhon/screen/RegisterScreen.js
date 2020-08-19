@@ -3,8 +3,8 @@
 
 //Import React and Hook we needed
 import React, {useState} from 'react';
-// RegisterScreen
-//Import all required component//
+
+//Import all required component
 import {
   StyleSheet,
   TextInput,
@@ -93,12 +93,12 @@ const RegisterScreen = (props) => {
       <View
         style={{
           flex: 1,
-          backgroundColor: 'white',
+          backgroundColor: '#307ecc',
           justifyContent: 'center',
         }}>
         <Image
-          source={require('../img/user.png')}
-          style={{height: 300, resizeMode: 'contain', alignSelf: 'center'}}
+          source={require('../img/logo01.png')}
+          style={{height: 150, resizeMode: 'contain', alignSelf: 'center'}}
         />
         <Text style={styles.successTextStyle}>Registration Successful.</Text>
         <TouchableOpacity
@@ -111,12 +111,12 @@ const RegisterScreen = (props) => {
     );
   }
   return (
-    <View style={{flex: 1, backgroundColor: 'white'}}>
+    <View style={{flex: 1, backgroundColor: '#307ecc'}}>
       <Loader loading={loading} />
       <ScrollView keyboardShouldPersistTaps="handled">
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../img/user.png')}
+            source={require('../img/logo01.png')}
             style={{
               width: '50%',
               height: 100,
@@ -130,8 +130,9 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserName) => setUserName(UserName)}
-              placeholder="  Enter Name"
-              placeholderTextColor="black" //colorname
+              underlineColorAndroid="#FFFFFF"
+              placeholder="Enter Name"
+              placeholderTextColor="#F6F6F7"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={() =>
@@ -144,8 +145,9 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserEmail) => setUserEmail(UserEmail)}
-              placeholder="  Enter Email"
-              placeholderTextColor="black" //coloremail
+              underlineColorAndroid="#F6F6F7"
+              placeholder="Enter Email"
+              placeholderTextColor="#F6F6F7"
               keyboardType="email-address"
               ref={(ref) => {
                 this._emailinput = ref;
@@ -159,8 +161,9 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserAge) => setUserAge(UserAge)}
-              placeholder="  Enter Age"
-              placeholderTextColor="black" //colorAge
+              underlineColorAndroid="#F6F6F7"
+              placeholder="Enter Age"
+              placeholderTextColor="#F6F6F7"
               keyboardType="numeric"
               ref={(ref) => {
                 this._ageinput = ref;
@@ -171,7 +174,22 @@ const RegisterScreen = (props) => {
               blurOnSubmit={false}
             />
           </View>
-
+          <View style={styles.SectionStyle}>
+            <TextInput
+              style={styles.inputStyle}
+              onChangeText={(UserAddress) => setUserAddress(UserAddress)}
+              underlineColorAndroid="#FFFFFF"
+              placeholder="Enter Address"
+              placeholderTextColor="#F6F6F7"
+              autoCapitalize="sentences"
+              ref={(ref) => {
+                this._addressinput = ref;
+              }}
+              returnKeyType="next"
+              onSubmitEditing={Keyboard.dismiss}
+              blurOnSubmit={false}
+            />
+          </View>
           {errortext != '' ? (
             <Text style={styles.errorTextStyle}> {errortext} </Text>
           ) : null}
@@ -198,7 +216,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   buttonStyle: {
-    backgroundColor: '#0066ff',
+    backgroundColor: '#7DE24E',
     borderWidth: 0,
     color: '#FFFFFF',
     borderColor: '#7DE24E',
@@ -211,18 +229,18 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonTextStyle: {
-    color: 'white',
+    color: '#FFFFFF',
     paddingVertical: 10,
     fontSize: 16,
   },
   inputStyle: {
     flex: 1,
-    color: 'black',
+    color: 'white',
     paddingLeft: 15,
     paddingRight: 15,
     borderWidth: 1,
     borderRadius: 30,
-    borderColor: 'black',
+    borderColor: 'white',
   },
   errorTextStyle: {
     color: 'red',
@@ -230,7 +248,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   successTextStyle: {
-    color: 'black',
+    color: 'white',
     textAlign: 'center',
     fontSize: 18,
     padding: 30,

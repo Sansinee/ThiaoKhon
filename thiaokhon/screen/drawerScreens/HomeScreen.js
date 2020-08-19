@@ -3,11 +3,9 @@
 
 //Import React
 import React from 'react';
-// HomeScreen
+
 //Import all required component
 import {View, Text} from 'react-native';
-
-// ...
 
 const HomeScreen = () => {
   global.currentScreenIndex = 'HomeScreen';

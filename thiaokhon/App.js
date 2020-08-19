@@ -3,12 +3,12 @@
 
 //Import React
 import React from 'react';
-// App //
+
 //Import Navigators from React Navigation
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-//Import all the Screens needed
+//Import all the screens needed
 import SplashScreen from './Screen/SplashScreen';
 import LoginScreen from './Screen/LoginScreen';
 import RegisterScreen from './Screen/RegisterScreen';
@@ -17,13 +17,13 @@ import DrawerNavigationRoutes from './Screen/DrawerNavigationRoutes';
 const Auth = createStackNavigator({
   //Stack Navigator for Login and Sign up Screen
   LoginScreen: {
-    Screen: LoginScreen,
+    screen: LoginScreen,
     navigationOptions: {
       headerShown: false,
     },
   },
   RegisterScreen: {
-    Screen: RegisterScreen,
+    screen: RegisterScreen,
     navigationOptions: {
       title: 'Register',
       headerStyle: {
@@ -34,12 +34,12 @@ const Auth = createStackNavigator({
   },
 });
 
-/* Switch Navigator for those Screens which needs to be switched only once
+/* Switch Navigator for those screens which needs to be switched only once
   and we don't want to switch back once we switch from them to the next one */
 const App = createSwitchNavigator({
   SplashScreen: {
     /* SplashScreen which will come once for 5 Seconds */
-    Screen: SplashScreen,
+    screen: SplashScreen,
     navigationOptions: {
       /* Hiding header for Splash Screen */
       headerShown: false,
@@ -47,11 +47,11 @@ const App = createSwitchNavigator({
   },
   Auth: {
     /* Auth Navigator which includer Login Signup will come once */
-    Screen: Auth,
+    screen: Auth,
   },
   DrawerNavigationRoutes: {
     /* Navigation Drawer as a landing page */
-    Screen: DrawerNavigationRoutes,
+    screen: DrawerNavigationRoutes,
     navigationOptions: {
       /* Hiding header for Navigation Drawer as we will use our custom header */
       headerShown: false,
