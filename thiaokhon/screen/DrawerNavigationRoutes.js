@@ -11,6 +11,7 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 //Import External Screens
 import HomeScreen from './drawerScreens/HomeScreen';
 import SettingsScreen from './drawerScreens/SettingsScreen';
+import MainScreen from './drawerScreens/MainScreen';
 import CustomSidebarMenu from './Components/CustomSidebarMenu';
 import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
 
@@ -41,6 +42,19 @@ const SecondActivity_StackNavigator = createStackNavigator({
     }),
   },
 });
+const ThreeActivity_StackNavigator = createStackNavigator({
+  First: {
+    screen: MainScreen,
+    navigationOptions: ({navigation}) => ({
+      title: 'Main Screen',
+      headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#307ecc',
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
 
 const DrawerNavigatorRoutes = createDrawerNavigator(
   {
@@ -54,6 +68,12 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
       screen: SecondActivity_StackNavigator,
       navigationOptions: {
         drawerLabel: 'Setting Screen',
+      },
+    },
+    MainScreen: {
+      screen: ThreeActivity_StackNavigator,
+      navigationOptions: {
+        drawerLabel: 'Main Screen',
       },
     },
   },

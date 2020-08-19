@@ -24,8 +24,8 @@ const CustomSidebarMenu = (props) => {
     },
     {
       // add barmain
-      navOptionName: 'Main',
-      screenToNavigate: 'Main',
+      navOptionName: 'Main Screen',
+      screenToNavigate: 'MainScreen',
     },
   ];
 

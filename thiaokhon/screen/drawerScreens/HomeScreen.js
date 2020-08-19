@@ -39,18 +39,18 @@ const HomeScreen = () => {
   global.currentScreenIndex = 'HomeScreen';
   return (
     <View style={{flex: 1, alignItems: 'center', marginTop: 100}}> 
-    {/* add img for slide */}
-    <Swiper style={styles.wrapper} showsButtons loop={false}>
-    <View testID="Hello" style={styles.slide1}>
-      <Text style={styles.text}>Hello Swiper</Text>
-    </View>
-    <View testID="Beautiful" style={styles.slide2}>
-      <Text style={styles.text}>Beautiful</Text>
-    </View>
-    <View testID="Simple" style={styles.slide3}>
-      <Text style={styles.text}>And simple</Text>
-    </View>
-  </Swiper>
+      {/* add img for slide */}
+      <Swiper style={styles.wrapper} showsButtons loop={false}>
+        <View testID="Hello" style={styles.slide1}>
+          <Text style={styles.text}>Hello Swiper</Text>
+        </View>
+        <View testID="Beautiful" style={styles.slide2}>
+          <Text style={styles.text}>Beautiful</Text>
+        </View>
+        <View testID="Simple" style={styles.slide3}>
+          <Text style={styles.text}>And simple</Text>
+        </View>
+      </Swiper>
       <Text style={{fontSize: 23, marginTop: 10}}>Home Screen</Text>
       <Text style={{fontSize: 18, marginTop: 10}}>
         Simple Login Registraction Example
