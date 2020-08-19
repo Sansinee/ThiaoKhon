@@ -85,10 +85,8 @@ const LoginScreen = (props) => {
               <Image
                 source={require('../img/logo01.png')}
                 style={{
-                  width: '50%',
-                  height: 100,
-                  resizeMode: 'contain',
-                  margin: 30,
+                  width: '90%',
+                  height: 150,
                 }}
               />
             </View>
@@ -96,9 +94,8 @@ const LoginScreen = (props) => {
               <TextInput
                 style={styles.inputStyle}
                 onChangeText={(UserEmail) => setUserEmail(UserEmail)}
-                underlineColorAndroid="#FFFFFF"
                 placeholder="Enter Email" //dummy@abc.com
-                placeholderTextColor="#F6F6F7"
+                placeholderTextColor="black"
                 autoCapitalize="none"
                 keyboardType="email-address"
                 ref={(ref) => {
@@ -115,9 +112,8 @@ const LoginScreen = (props) => {
               <TextInput
                 style={styles.inputStyle}
                 onChangeText={(UserPassword) => setUserPassword(UserPassword)}
-                underlineColorAndroid="#FFFFFF"
                 placeholder="Enter Password" //12345
-                placeholderTextColor="#F6F6F7"
+                placeholderTextColor="black"
                 keyboardType="default"
                 ref={(ref) => {
                   this._passwordinput = ref;
@@ -153,7 +149,7 @@ const styles = StyleSheet.create({
   mainBody: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#307ecc',
+    backgroundColor: 'white',
   },
   SectionStyle: {
     flexDirection: 'row',
@@ -164,10 +160,10 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   buttonStyle: {
-    backgroundColor: '#7DE24E',
+    backgroundColor: '#0066ff',
     borderWidth: 0,
     color: '#FFFFFF',
-    borderColor: '#7DE24E',
+    borderColor: 'black',
     height: 40,
     alignItems: 'center',
     borderRadius: 30,
@@ -177,7 +173,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonTextStyle: {
-    color: '#FFFFFF',
+    color: 'white',
     paddingVertical: 10,
     fontSize: 16,
   },
@@ -188,10 +184,10 @@ const styles = StyleSheet.create({
     paddingRight: 15,
     borderWidth: 1,
     borderRadius: 30,
-    borderColor: 'white',
+    borderColor: 'black',
   },
   registerTextStyle: {
-    color: '#FFFFFF',
+    color: 'black',
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 14,

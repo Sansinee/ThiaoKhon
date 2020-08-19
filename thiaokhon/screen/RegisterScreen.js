@@ -97,7 +97,7 @@ const RegisterScreen = (props) => {
           justifyContent: 'center',
         }}>
         <Image
-          source={require('../img/logo01.png')}
+          source={require('../img/user.png')}
           style={{height: 150, resizeMode: 'contain', alignSelf: 'center'}}
         />
         <Text style={styles.successTextStyle}>Registration Successful.</Text>
@@ -111,17 +111,18 @@ const RegisterScreen = (props) => {
     );
   }
   return (
-    <View style={{flex: 1, backgroundColor: '#307ecc'}}>
+    <View style={{flex: 1, backgroundColor: 'white'}}>
       <Loader loading={loading} />
       <ScrollView keyboardShouldPersistTaps="handled">
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../img/logo01.png')}
+            source={require('../img/user.png')}
             style={{
-              width: '50%',
+              width: '70%',
               height: 100,
-              resizeMode: 'contain',
+              // resizeMode: 'contain',
               margin: 30,
+              padding: 20,
             }}
           />
         </View>
@@ -130,9 +131,8 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserName) => setUserName(UserName)}
-              underlineColorAndroid="#FFFFFF"
               placeholder="Enter Name"
-              placeholderTextColor="#F6F6F7"
+              placeholderTextColor="black"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={() =>
@@ -145,9 +145,8 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserEmail) => setUserEmail(UserEmail)}
-              underlineColorAndroid="#F6F6F7"
               placeholder="Enter Email"
-              placeholderTextColor="#F6F6F7"
+              placeholderTextColor="black"
               keyboardType="email-address"
               ref={(ref) => {
                 this._emailinput = ref;
@@ -157,30 +156,13 @@ const RegisterScreen = (props) => {
               blurOnSubmit={false}
             />
           </View>
-          <View style={styles.SectionStyle}>
-            <TextInput
-              style={styles.inputStyle}
-              onChangeText={(UserAge) => setUserAge(UserAge)}
-              underlineColorAndroid="#F6F6F7"
-              placeholder="Enter Age"
-              placeholderTextColor="#F6F6F7"
-              keyboardType="numeric"
-              ref={(ref) => {
-                this._ageinput = ref;
-              }}
-              onSubmitEditing={() =>
-                this._addressinput && this._addressinput.focus()
-              }
-              blurOnSubmit={false}
-            />
-          </View>
+
           <View style={styles.SectionStyle}>
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserAddress) => setUserAddress(UserAddress)}
-              underlineColorAndroid="#FFFFFF"
               placeholder="Enter Address"
-              placeholderTextColor="#F6F6F7"
+              placeholderTextColor="black"
               autoCapitalize="sentences"
               ref={(ref) => {
                 this._addressinput = ref;
@@ -216,7 +198,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   buttonStyle: {
-    backgroundColor: '#7DE24E',
+    backgroundColor: '#0066ff',
     borderWidth: 0,
     color: '#FFFFFF',
     borderColor: '#7DE24E',
@@ -229,7 +211,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonTextStyle: {
-    color: '#FFFFFF',
+    color: 'white',
     paddingVertical: 10,
     fontSize: 16,
   },
@@ -240,7 +222,7 @@ const styles = StyleSheet.create({
     paddingRight: 15,
     borderWidth: 1,
     borderRadius: 30,
-    borderColor: 'white',
+    borderColor: 'black',
   },
   errorTextStyle: {
     color: 'red',
