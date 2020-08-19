@@ -3,7 +3,7 @@
 
 //Import React and Hook we needed
 import React from 'react';
-
+// loader
 //Import all required component
 import {StyleSheet, View, Modal, ActivityIndicator} from 'react-native';
 

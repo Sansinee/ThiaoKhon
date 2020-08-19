@@ -3,8 +3,8 @@
 
 //Import React and Hooks we needed
 import React, {useState, useEffect} from 'react';
-
-//Import all required component
+// SplashScreen
+//Import all required component//
 import {ActivityIndicator, View, StyleSheet, Image} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 

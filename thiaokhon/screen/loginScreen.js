@@ -3,8 +3,8 @@
 
 //Import React and Hook we needed
 import React, {useState} from 'react';
-
-//Import all required component
+// LoginScreen
+//Import all required component//
 import {
   StyleSheet,
   TextInput,
