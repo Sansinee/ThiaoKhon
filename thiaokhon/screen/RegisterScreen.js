@@ -121,7 +121,7 @@ const RegisterScreen = (props) => {
               width: '70%',
               height: 100,
               // resizeMode: 'contain',
-              margin: 30,
+              margin: 20,
               padding: 20,
             }}
           />

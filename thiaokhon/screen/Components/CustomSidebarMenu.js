@@ -15,17 +15,17 @@ const CustomSidebarMenu = (props) => {
       screenToNavigate: 'HomeScreen',
     },
     {
+      // add barmain
+      navOptionName: 'Main Screen',
+      screenToNavigate: 'MainScreen',
+    },
+    {
       navOptionName: 'Setting Screen',
       screenToNavigate: 'SettingsScreen',
     },
     {
       navOptionName: 'Logout',
       screenToNavigate: 'logout',
-    },
-    {
-      // add barmain
-      navOptionName: 'Main Screen',
-      screenToNavigate: 'MainScreen',
     },
   ];
 
@@ -67,7 +67,7 @@ const CustomSidebarMenu = (props) => {
             {'About React'.charAt(0)}
           </Text>
         </View>
-        <Text style={stylesSidebar.profileHeaderText}>AboutReact</Text>
+        <Text style={stylesSidebar.profileHeaderText}>ThiaoKhon</Text>
       </View>
       <View style={stylesSidebar.profileHeaderLine} />
       <View style={{width: '100%', flex: 1}}>
