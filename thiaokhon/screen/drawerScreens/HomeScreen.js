@@ -42,13 +42,13 @@ const HomeScreen = () => {
       <Swiper style={styles.wrapper} showsButtons loop={false}>
         <View testID="Hello" style={styles.slide1}>
           <Text style={styles.text}>Hello Swiper</Text>
-          <Image
+          {/* <Image
             source={require('../img/logo01.png')}
             style={{
               width: '90%',
               height: 150,
             }}
-          />
+          /> */}
         </View>
         <View testID="Beautiful" style={styles.slide2}>
           <Text style={styles.text}>Beautiful</Text>
