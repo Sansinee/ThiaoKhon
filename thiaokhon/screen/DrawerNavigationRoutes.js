@@ -21,9 +21,9 @@ const FirstActivity_StackNavigator = createStackNavigator({
       title: 'Home Screen',
       headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: 'white',
+        backgroundColor: '#307ecc',
       },
-      headerTintColor: 'black',
+      headerTintColor: 'white',
     }),
   },
 });

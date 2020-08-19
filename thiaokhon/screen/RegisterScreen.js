@@ -97,8 +97,8 @@ const RegisterScreen = (props) => {
           justifyContent: 'center',
         }}>
         <Image
-          source={require('../img/logo1.png')}
-          style={{height: 200, resizeMode: 'contain', alignSelf: 'center'}}
+          source={require('../img/user.png')}
+          style={{height: 300, resizeMode: 'contain', alignSelf: 'center'}}
         />
         <Text style={styles.successTextStyle}>Registration Successful.</Text>
         <TouchableOpacity
@@ -111,12 +111,12 @@ const RegisterScreen = (props) => {
     );
   }
   return (
-    <View style={{flex: 1, backgroundColor: '#307ecc'}}>
+    <View style={{flex: 1, backgroundColor: 'white'}}>
       <Loader loading={loading} />
       <ScrollView keyboardShouldPersistTaps="handled">
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../img/logo.png')}
+            source={require('../img/user.png')}
             style={{
               width: '50%',
               height: 100,
@@ -171,21 +171,7 @@ const RegisterScreen = (props) => {
               blurOnSubmit={false}
             />
           </View>
-          <View style={styles.SectionStyle}>
-            <TextInput
-              style={styles.inputStyle}
-              onChangeText={(UserAddress) => setUserAddress(UserAddress)}
-              placeholder="Enter Address"
-              placeholderTextColor="black" //Address
-              autoCapitalize="sentences"
-              ref={(ref) => {
-                this._addressinput = ref;
-              }}
-              returnKeyType="next"
-              onSubmitEditing={Keyboard.dismiss}
-              blurOnSubmit={false}
-            />
-          </View>
+
           {errortext != '' ? (
             <Text style={styles.errorTextStyle}> {errortext} </Text>
           ) : null}
@@ -210,7 +196,6 @@ const styles = StyleSheet.create({
     marginLeft: 35,
     marginRight: 35,
     margin: 10,
-    backgroundColor: '#FFFFFF',
   },
   buttonStyle: {
     backgroundColor: '#0066ff',
@@ -226,7 +211,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonTextStyle: {
-    color: 'black',
+    color: 'white',
     paddingVertical: 10,
     fontSize: 16,
   },

@@ -10,3 +10,4 @@ install
    3.npm install react-navigation-drawer --save
    4.npm install react-navigation-stack --save
    5.npm install --save @react-native-community/async-storage
+2.npm install --save react-native-snap-carousel
