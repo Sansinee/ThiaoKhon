@@ -1,6 +1,5 @@
 /* This is an Login Registration example from https://aboutreact.com/ */
 /* https://aboutreact.com/react-native-login-and-signup/ */
-
 //Import React and Hook we needed
 import React, {useState} from 'react';
 // LoginScreen
@@ -18,13 +17,11 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Loader from './Components/loader';
-
 const LoginScreen = (props) => {
   let [userEmail, setUserEmail] = useState('');
   let [userPassword, setUserPassword] = useState('');
   let [loading, setLoading] = useState(false);
   let [errortext, setErrortext] = useState('');
-
   const handleSubmitPress = () => {
     setErrortext('');
     if (!userEmail) {
@@ -44,7 +41,6 @@ const LoginScreen = (props) => {
       formBody.push(encodedKey + '=' + encodedValue);
     }
     formBody = formBody.join('&');
-
     fetch('https://aboutreact.herokuapp.com/login.php', {
       method: 'POST',
       body: formBody,
@@ -74,7 +70,6 @@ const LoginScreen = (props) => {
         console.error(error);
       });
   };
-
   return (
     <View style={styles.mainBody}>
       <Loader loading={loading} />
@@ -147,7 +142,6 @@ const LoginScreen = (props) => {
   );
 };
 export default LoginScreen;
-
 const styles = StyleSheet.create({
   mainBody: {
     flex: 1,

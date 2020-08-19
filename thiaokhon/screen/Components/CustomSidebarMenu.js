@@ -18,6 +18,7 @@ const CustomSidebarMenu = (props) => {
       navOptionName: 'Setting Screen',
       screenToNavigate: 'SettingsScreen',
     },
+
     {
       navOptionName: 'Logout',
       screenToNavigate: 'logout',
