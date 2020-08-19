@@ -22,6 +22,11 @@ const CustomSidebarMenu = (props) => {
       navOptionName: 'Logout',
       screenToNavigate: 'logout',
     },
+    {
+      // add barmain
+      navOptionName: 'Main',
+      screenToNavigate: 'Main',
+    },
   ];
 
   const handleClick = (index, screenToNavigate) => {
