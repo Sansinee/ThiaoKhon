@@ -3,7 +3,7 @@
 
 //Import React
 import React from 'react';
-// App
+// App //
 //Import Navigators from React Navigation
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
