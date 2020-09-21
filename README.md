@@ -15,3 +15,4 @@ install
 
 3. npm i react-native-swiper --save
    2.npm i --save react-native-swiper@next
+4 install  npm i react-native-image-slider-box(new)
