@@ -13,6 +13,6 @@ install
 2. npm install --save react-native-snap-carousel
 
 3. npm i react-native-swiper --save
-   npm i --save react-native-swiper@next
+4. npm i --save react-native-swiper@next
 
-4. npm i react-native-image-slider-box
+5. npm i react-native-image-slider-box
