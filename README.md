@@ -1,7 +1,8 @@
 # ThiaoKhon
 
 install
-////////
+
+!!!!!!!!!!!!!ERROR 500 เช็คชื่อไฟล์ก่อนว่าตรงกันมั้ย!!!!!!!!!!
 
 1. npm install react-navigation --save
    2.npm install react-native-gesture-handler
