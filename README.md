@@ -10,9 +10,9 @@ install
    3.npm install react-navigation-drawer --save
    4.npm install react-navigation-stack --save
    5.npm install --save @react-native-community/async-storage
-   
 2. npm install --save react-native-snap-carousel
 
 3. npm i react-native-swiper --save
-   2.npm i --save react-native-swiper@next
-4 install  npm i react-native-image-slider-box(new)
+   npm i --save react-native-swiper@next
+
+4. npm i react-native-image-slider-box

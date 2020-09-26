@@ -41,7 +41,7 @@ export default class App extends Component {
           //imageLoadingColor กำหนดสีให้กับไอคอนโหลดรูปภาพของสไลด์
           imageLoadingColor={'green'}
           //sliderBoxHeight กำหนดขนาดความสูงของ slide box
-          sliderBoxHeight={250}
+          sliderBoxHeight={300}
         />
       </View>
     );
