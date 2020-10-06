@@ -2,21 +2,76 @@
 /* https://aboutreact.com/react-native-login-and-signup/ */
 
 //Import React
+// import React from 'react';
+// // มึนเว้ย
+// //Import all required component
+// import TabNavigator from 'react-native-tab-navigator';
+// import {View, Text, Image} from 'react-native';
+
+// const SettingsScreen = () => {
+//   return (
+//     <View style={{flex: 1, alignItems: 'center', marginTop: 350}}>
+//       <Text style={{fontSize: 23, marginTop: 10}}>Personal information</Text>
+//       <Text style={{fontSize: 18, marginTop: 10}}>
+//         Simple Login Registraction Example
+//       </Text>
+//       <Text style={{fontSize: 18, marginTop: 10}}>read more</Text>
+//     </View>
+//   );
+// };
+
+// export default SettingsScreen;
 import React from 'react';
-//เวรเอ้ย
-//Import all required component
-import {View, Text} from 'react-native';
+import {SectionList, StyleSheet, Text, View} from 'react-native';
 
-const MainScreen = () => {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 22,
+  },
+  sectionHeader: {
+    paddingTop: 2,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 2,
+    fontSize: 14,
+    fontWeight: 'bold',
+    backgroundColor: 'rgba(247,247,247,1.0)',
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+});
+
+const SectionListBasics = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', marginTop: 100}}>
-      <Text style={{fontSize: 23, marginTop: 10}}>Main Screen</Text>
-
-      <Text style={{fontSize: 18, marginTop: 10}}>
-        Simple Login Registraction Example
-      </Text>
-      <Text style={{fontSize: 18, marginTop: 10}}>https://aboutreact</Text>
+    <View style={styles.container}>
+      <SectionList
+        sections={[
+          {title: 'D', data: ['Devin', 'Dan', 'Dominic']},
+          {
+            title: 'J',
+            data: [
+              'Jackson',
+              'James',
+              'Jillian',
+              'Jimmy',
+              'Joel',
+              'John',
+              'Julie',
+            ],
+          },
+        ]}
+        renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
+        renderSectionHeader={({section}) => (
+          <Text style={styles.sectionHeader}>{section.title}</Text>
+        )}
+        keyExtractor={(item, index) => index}
+      />
     </View>
   );
 };
-export default MainScreen;
+
+export default SectionListBasics;
