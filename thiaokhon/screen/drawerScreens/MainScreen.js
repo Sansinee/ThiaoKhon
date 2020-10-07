@@ -1,77 +1,135 @@
-/* This is an Login Registration example from https://aboutreact.com/ */
-/* https://aboutreact.com/react-native-login-and-signup/ */
+// /* This is an Login Registration example from https://aboutreact.com/ */
+// /* https://aboutreact.com/react-native-login-and-signup/ */
 
-//Import React
+// //Import React
+// // import React from 'react';
+// // // มึนเว้ย
+// // //Import all required component
+// // import TabNavigator from 'react-native-tab-navigator';
+// // import {View, Text, Image} from 'react-native';
+
+// // const SettingsScreen = () => {
+// //   return (
+// //     <View style={{flex: 1, alignItems: 'center', marginTop: 350}}>
+// //       <Text style={{fontSize: 23, marginTop: 10}}>Personal information</Text>
+// //       <Text style={{fontSize: 18, marginTop: 10}}>
+// //         Simple Login Registraction Example
+// //       </Text>
+// //       <Text style={{fontSize: 18, marginTop: 10}}>read more</Text>
+// //     </View>
+// //   );
+// // };
+
+// // export default SettingsScreen;
+
 // import React from 'react';
-// // มึนเว้ย
-// //Import all required component
-// import TabNavigator from 'react-native-tab-navigator';
-// import {View, Text, Image} from 'react-native';
+// import {SectionList, StyleSheet, Text, View} from 'react-native';
 
-// const SettingsScreen = () => {
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     paddingTop: 22,
+//   },
+//   sectionHeader: {
+//     paddingTop: 2,
+//     paddingLeft: 10,
+//     paddingRight: 10,
+//     paddingBottom: 2,
+//     fontSize: 14,
+//     fontWeight: 'bold',
+//     backgroundColor: 'rgba(247,247,247,1.0)',
+//   },
+//   item: {
+//     padding: 10,
+//     fontSize: 18,
+//     height: 44,
+//   },
+// });
+
+// const SectionListBasics = () => {
 //   return (
-//     <View style={{flex: 1, alignItems: 'center', marginTop: 350}}>
-//       <Text style={{fontSize: 23, marginTop: 10}}>Personal information</Text>
-//       <Text style={{fontSize: 18, marginTop: 10}}>
-//         Simple Login Registraction Example
-//       </Text>
-//       <Text style={{fontSize: 18, marginTop: 10}}>read more</Text>
+//     <View style={styles.container}>
+//       <SectionList
+//         sections={[
+//           {title: 'D', data: ['Devin', 'Dan', 'Dominic']},
+//           {
+//             title: 'J',
+//             data: [
+//               'Jackson',
+//               'James',
+//               'Jillian',
+//               'Jimmy',
+//               'Joel',
+//               'John',
+//               'Julie',
+//             ],
+//           },
+//         ]}
+//         renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
+//         renderSectionHeader={({section}) => (
+//           <Text style={styles.sectionHeader}>{section.title}</Text>
+//         )}
+//         keyExtractor={(item, index) => index}
+//       />
 //     </View>
 //   );
 // };
 
-// export default SettingsScreen;
+// export default SectionListBasics;
+
 import React from 'react';
-import {SectionList, StyleSheet, Text, View} from 'react-native';
+import {View, Text, Image} from 'react-native';
+import {Searchbar} from 'react-native-paper';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 22,
-  },
-  sectionHeader: {
-    paddingTop: 2,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingBottom: 2,
-    fontSize: 14,
-    fontWeight: 'bold',
-    backgroundColor: 'rgba(247,247,247,1.0)',
-  },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
-});
+const ViewBoxesWithColorAndText = () => {
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const onChangeSearch = (query) => setSearchQuery(query);
 
-const SectionListBasics = () => {
   return (
-    <View style={styles.container}>
-      <SectionList
-        sections={[
-          {title: 'D', data: ['Devin', 'Dan', 'Dominic']},
-          {
-            title: 'J',
-            data: [
-              'Jackson',
-              'James',
-              'Jillian',
-              'Jimmy',
-              'Joel',
-              'John',
-              'Julie',
-            ],
-          },
-        ]}
-        renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
-        renderSectionHeader={({section}) => (
-          <Text style={styles.sectionHeader}>{section.title}</Text>
-        )}
-        keyExtractor={(item, index) => index}
+    <View
+      style={{
+        flexDirection: 'column',
+        height: 100,
+        padding: 20,
+      }}>
+      <Searchbar
+        placeholder="Search"
+        onChangeText={onChangeSearch}
+        value={searchQuery}
       />
+
+      <Image
+        source={{
+          uri:
+            'https://img.wongnai.com/p/1920x0/2020/08/18/05cbe30bdf6a48e9bd26e9cacc259b08.jpg',
+          cache: 'only-if-cached',
+        }}
+        style={{width: 100, height: 100}}
+      />
+
+      <Text> สะพานไม้อ่าวเตล็ด </Text>
+      <Image
+        source={{
+          uri:
+            'https://img.wongnai.com/p/1920x0/2020/07/06/3414eb175ed64b389648baa7cc5b5a6b.jpg',
+          cache: 'only-if-cached',
+        }}
+        style={{width: 100, height: 100}}
+      />
+
+      <Text> อ่าวท้องหยี</Text>
+      <Image
+        source={{
+          uri:
+            'https://img.wongnai.com/p/1920x0/2019/05/31/1a99ec29118246799426055945d3ff9d.jpg',
+          cache: 'only-if-cached',
+        }}
+        style={{width: 100, height: 100}}
+      />
+
+      <Text>ขนอมแกรนด์แคนยอน </Text>
     </View>
   );
 };
 
-export default SectionListBasics;
+export default ViewBoxesWithColorAndText;

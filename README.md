@@ -18,4 +18,8 @@ install
 
 5. npm i react-native-image-slider-box
 
-คำสั่งใหม่ 6. npm install react-native-scrollable-tab-view --save
+6. npm install react-native-scrollable-tab-view --save
+
+คำสั่งใหม่
+
+7. npm i react-native-paper

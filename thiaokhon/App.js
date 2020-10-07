@@ -9,10 +9,10 @@ import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 //Import all the screens needed
-import SplashScreen from './Screen/SplashScreen';
-import LoginScreen from './Screen/LoginScreen';
-import RegisterScreen from './Screen/RegisterScreen';
-import DrawerNavigationRoutes from './Screen/DrawerNavigationRoutes';
+import SplashScreen from './screen/SplashScreen';
+import LoginScreen from './screen/LoginScreen';
+import RegisterScreen from './screen/RegisterScreen';
+import DrawerNavigationRoutes from './screen/DrawerNavigationRoutes';
 
 const Auth = createStackNavigator({
   //Stack Navigator for Login and Sign up Screen
