@@ -12,6 +12,7 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 import HomeScreen from './drawerScreens/HomeScreen';
 import SettingsScreen from './drawerScreens/SettingsScreen';
 import MainScreen from './drawerScreens/MainScreen';
+import Profile from './drawerScreens/Profile';
 import CustomSidebarMenu from './Components/CustomSidebarMenu';
 import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
 
@@ -55,6 +56,19 @@ const ThreeActivity_StackNavigator = createStackNavigator({
     }),
   },
 });
+const FourActivity_StackNavigator = createStackNavigator({
+  First: {
+    screen: Profile,
+    navigationOptions: ({navigation}) => ({
+      title: 'Profile',
+      headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#307ecc',
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
 
 const DrawerNavigatorRoutes = createDrawerNavigator(
   {
@@ -74,6 +88,12 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
       screen: ThreeActivity_StackNavigator,
       navigationOptions: {
         drawerLabel: 'Main Screen',
+      },
+    },
+    Profile: {
+      screen: ThreeActivity_StackNavigator,
+      navigationOptions: {
+        drawerLabel: 'Profile',
       },
     },
   },

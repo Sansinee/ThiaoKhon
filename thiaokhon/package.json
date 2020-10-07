@@ -25,11 +25,12 @@
     "react-native-screens": "^2.11.0",
     "react-native-scroll-view": "^0.1.0",
     "react-native-scrollable-tab-view": "^1.0.0",
+    "react-native-snap-carousel": "^3.9.1",
     "react-native-swiper": "^1.6.0-rc.3",
     "react-native-tab-navigator": "^0.3.4",
-    "react-navigation": "^4.4.1",
+    "react-navigation": "^4.4.2",
     "react-navigation-drawer": "^2.5.0",
-    "react-navigation-stack": "^2.8.2"
+    "react-navigation-stack": "^2.8.4"
   },
   "devDependencies": {
     "@babel/core": "7.11.1",
