@@ -91,7 +91,7 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
       },
     },
     Profile: {
-      screen: ThreeActivity_StackNavigator,
+      screen: FourActivity_StackNavigator,
       navigationOptions: {
         drawerLabel: 'Profile',
       },

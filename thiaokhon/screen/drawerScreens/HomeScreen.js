@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text,SafeAreaView, ScrollView, View, Image} from 'react-native';
 import {SliderBox} from 'react-native-image-slider-box';
 
 export default class App extends Component {
@@ -35,26 +35,21 @@ export default class App extends Component {
           sliderBoxHeight={300}
         />
 
-        <Text style={styles.toolbarButton}>หมวดหมู่</Text>
-
-        <Image
-          source={{
-            uri:
-              'https://pbs.twimg.com/media/D3isOjqV4AIkCPB?format=jpg&name=small',
-            cache: 'only-if-cached',
-          }}
-          style={{width: 100, height: 180}}
-        />
-        {/* <View style={{flex: 1, flexDirection: 'row'}}>
-          <View
-            style={{width: 50, height: 50, backgroundColor: 'powderblue'}}
-          />
-          <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-          
-          <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-        </View> */}
+        <SafeAreaView style={styles.container}>
+          <ScrollView style={styles.scrollView}>
+            <Text style={styles.toolbarButton}>หมวดหมู่</Text>
+            <Image
+              source={{
+                uri:
+                  'https://pbs.twimg.com/media/D3isOjqV4AIkCPB?format=jpg&name=small',
+                cache: 'only-if-cached',
+              }}
+              style={{width: 100, height: 180}}
+            />
+          </ScrollView>
+        </SafeAreaView>
       </View>
-    );
+        );
   }
 }
 
@@ -68,4 +63,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 18,
   },
+  scrollView: {
+    backgroundColor: 'white',
+    marginHorizontal: 20,
+  },
 });
+
+ /* <View style={{flex: 1, flexDirection: 'row'}}>
+      <View
+        style={{width: 50, height: 50, backgroundColor: 'powderblue'}}
+      />
+      <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+              
+      <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+    </View> */

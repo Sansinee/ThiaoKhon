@@ -1,3 +1,69 @@
+import React from 'react';
+import {View, Text, Image} from 'react-native';
+import {Searchbar} from 'react-native-paper';
+
+const ViewBoxesWithColorAndText = () => {
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const onChangeSearch = (query) => setSearchQuery(query);
+
+  return (
+    <View
+      style={{
+        flexDirection: 'column',
+        height: 100,
+        padding: 20,
+      }}>
+      <Searchbar
+        placeholder="Search"
+        onChangeText={onChangeSearch}
+        value={searchQuery}
+      />
+
+      <View style={{flexDirection: 'column',height: 100,margin: 20,}}>
+        <Image
+          source={{
+            uri:
+              'https://img.wongnai.com/p/1920x0/2020/08/18/05cbe30bdf6a48e9bd26e9cacc259b08.jpg',
+            cache: 'only-if-cached',
+          }}
+          style={{width: 100, height: 100}}
+        />
+        <Text> สะพานไม้อ่าวเตล็ด </Text>
+      </View>
+
+
+      <View style={{flexDirection: 'column',height: 100,margin: 20,}}>
+      <Image
+        source={{
+          uri:
+            'https://img.wongnai.com/p/1920x0/2020/07/06/3414eb175ed64b389648baa7cc5b5a6b.jpg',
+          cache: 'only-if-cached',
+        }}
+        style={{width: 100, height: 100}}
+      />
+      <Text> อ่าวท้องหยี</Text>
+      </View>
+
+
+      <View style={{flexDirection: 'column',height: 100,margin: 20,}}>
+      <Image
+        source={{
+          uri:
+            'https://img.wongnai.com/p/1920x0/2019/05/31/1a99ec29118246799426055945d3ff9d.jpg',
+          cache: 'only-if-cached',
+        }}
+        style={{width: 100, height: 100}}
+      />
+      <Text>ขนอมแกรนด์แคนยอน </Text>
+      </View>
+
+    </View>
+  );
+};
+
+export default ViewBoxesWithColorAndText;
+
+
 // /* This is an Login Registration example from https://aboutreact.com/ */
 // /* https://aboutreact.com/react-native-login-and-signup/ */
 
@@ -76,60 +142,3 @@
 // };
 
 // export default SectionListBasics;
-
-import React from 'react';
-import {View, Text, Image} from 'react-native';
-import {Searchbar} from 'react-native-paper';
-
-const ViewBoxesWithColorAndText = () => {
-  const [searchQuery, setSearchQuery] = React.useState('');
-  const onChangeSearch = (query) => setSearchQuery(query);
-
-  return (
-    <View
-      style={{
-        flexDirection: 'column',
-        height: 100,
-        padding: 20,
-      }}>
-      <Searchbar
-        placeholder="Search"
-        onChangeText={onChangeSearch}
-        value={searchQuery}
-      />
-
-      <Image
-        source={{
-          uri:
-            'https://img.wongnai.com/p/1920x0/2020/08/18/05cbe30bdf6a48e9bd26e9cacc259b08.jpg',
-          cache: 'only-if-cached',
-        }}
-        style={{width: 100, height: 100}}
-      />
-
-      <Text> สะพานไม้อ่าวเตล็ด </Text>
-      <Image
-        source={{
-          uri:
-            'https://img.wongnai.com/p/1920x0/2020/07/06/3414eb175ed64b389648baa7cc5b5a6b.jpg',
-          cache: 'only-if-cached',
-        }}
-        style={{width: 100, height: 100}}
-      />
-
-      <Text> อ่าวท้องหยี</Text>
-      <Image
-        source={{
-          uri:
-            'https://img.wongnai.com/p/1920x0/2019/05/31/1a99ec29118246799426055945d3ff9d.jpg',
-          cache: 'only-if-cached',
-        }}
-        style={{width: 100, height: 100}}
-      />
-
-      <Text>ขนอมแกรนด์แคนยอน </Text>
-    </View>
-  );
-};
-
-export default ViewBoxesWithColorAndText;
