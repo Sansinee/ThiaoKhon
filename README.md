@@ -11,15 +11,17 @@ install
    3.npm install react-navigation-drawer --save
    4.npm install react-navigation-stack --save
    5.npm install --save @react-native-community/async-storage
+
 2. npm install --save react-native-snap-carousel
 
 3. npm i react-native-swiper --save
+
 4. npm i --save react-native-swiper@next
 
 5. npm i react-native-image-slider-box
 
 6. npm install react-native-scrollable-tab-view --save
 
-คำสั่งใหม่
-
 7. npm i react-native-paper
+New!! 
+8. npm i react-native-scroll-view
