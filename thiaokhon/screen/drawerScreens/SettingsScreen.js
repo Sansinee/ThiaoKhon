@@ -1,51 +1,5 @@
-/* This is an Login Registration example from https://aboutreact.com/ */
-/* https://aboutreact.com/react-native-login-and-signup/ */
-
-//Import React
-// import React from 'react';
-// //เวรเอ้ย
-// //Import all required component
-// import {View, Text} from 'react-native';
-
-// const MainScreen = () => {
-//   return (
-//     <View style={{flex: 1, alignItems: 'center', marginTop: 100}}>
-//       <Text style={{fontSize: 23, marginTop: 10}}>Main Screen</Text>
-
-//       <Text style={{fontSize: 18, marginTop: 10}}>
-//         Simple Login Registraction Example
-//       </Text>
-//       <Text style={{fontSize: 18, marginTop: 10}}>https://aboutreact</Text>
-//     </View>
-//   );
-// };
-// export default MainScreen;
-
 import React from 'react';
 import {StyleSheet, Text, View, Image, SafeAreaView, ScrollView} from 'react-native';
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flex: 1,
-    paddingTop: 22,
-  },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
-  toolbarButton: {
-    fontSize: 18,
-  },
-  toolbar: {
-    fontSize: 16,
-  },
-  scrollView: {
-    backgroundColor: 'white',
-    marginHorizontal: 20,
-  },
-});
 
 const FlatListBasics = () => {
   return (
@@ -85,4 +39,51 @@ const FlatListBasics = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    flex: 1,
+    paddingTop: 22,
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+  toolbarButton: {
+    fontSize: 18,
+  },
+  toolbar: {
+    fontSize: 16,
+  },
+  scrollView: {
+    backgroundColor: 'white',
+    marginHorizontal: 20,
+  },
+});
+
+
 export default FlatListBasics;
+
+/* This is an Login Registration example from https://aboutreact.com/ */
+/* https://aboutreact.com/react-native-login-and-signup/ */
+
+//Import React
+// import React from 'react';
+// //เวรเอ้ย
+// //Import all required component
+// import {View, Text} from 'react-native';
+
+// const MainScreen = () => {
+//   return (
+//     <View style={{flex: 1, alignItems: 'center', marginTop: 100}}>
+//       <Text style={{fontSize: 23, marginTop: 10}}>Main Screen</Text>
+
+//       <Text style={{fontSize: 18, marginTop: 10}}>
+//         Simple Login Registraction Example
+//       </Text>
+//       <Text style={{fontSize: 18, marginTop: 10}}>https://aboutreact</Text>
+//     </View>
+//   );
+// };
+// export default MainScreen;
