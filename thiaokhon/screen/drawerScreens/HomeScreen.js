@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text,SafeAreaView, ScrollView, View, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  SafeAreaView,
+  ScrollView,
+  View,
+  Image,
+} from 'react-native';
 import {SliderBox} from 'react-native-image-slider-box';
 
 export default class App extends Component {
@@ -17,7 +24,7 @@ export default class App extends Component {
       ],
     };
   }
-
+  //
   render() {
     return (
       <View style={styles.container}>
@@ -49,7 +56,7 @@ export default class App extends Component {
           </ScrollView>
         </SafeAreaView>
       </View>
-        );
+    );
   }
 }
 
