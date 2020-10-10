@@ -23,5 +23,5 @@ install
 6. npm install react-native-scrollable-tab-view --save
 
 7. npm i react-native-paper
-New!! 
+
 8. npm i react-native-scroll-view
