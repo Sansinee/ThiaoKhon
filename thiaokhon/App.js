@@ -7,7 +7,7 @@ import React from 'react';
 //Import Navigators from React Navigation
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-
+///
 //Import all the screens needed
 import SplashScreen from './screen/SplashScreen';
 import LoginScreen from './screen/LoginScreen';
