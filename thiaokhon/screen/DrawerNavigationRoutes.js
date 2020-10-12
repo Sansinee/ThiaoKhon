@@ -18,6 +18,7 @@ import Detail from './drawerScreens/Detail';
 import CustomSidebarMenu from './Components/CustomSidebarMenu';
 import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
 
+//home//
 const FirstActivity_StackNavigator = createStackNavigator({
   First: {
     screen: HomeScreen,
@@ -32,6 +33,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
   },
 });
 
+//setting//
 const SecondActivity_StackNavigator = createStackNavigator({
   First: {
     screen: SettingsScreen,
@@ -45,6 +47,8 @@ const SecondActivity_StackNavigator = createStackNavigator({
     }),
   },
 });
+
+//main//
 const ThreeActivity_StackNavigator = createStackNavigator({
   First: {
     screen: MainScreen,
@@ -58,6 +62,8 @@ const ThreeActivity_StackNavigator = createStackNavigator({
     }),
   },
 });
+
+//profile//
 const FourActivity_StackNavigator = createStackNavigator({
   First: {
     screen: Profile,
@@ -72,6 +78,7 @@ const FourActivity_StackNavigator = createStackNavigator({
   },
 });
 
+//detail//
 const FiveActivity_StackNavigator = createStackNavigator({
   First: {
     screen: Detail,
@@ -112,15 +119,12 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
         drawerLabel: 'Profile',
       },
     },
-    ///detail///
     Detail: {
       screen: FiveActivity_StackNavigator,
       navigationOptions: {
-        drawerLabel: 'Profile',
+        drawerLabel: 'Detail',
       },
     },
-
-    
   },
   {
     contentComponent: CustomSidebarMenu,

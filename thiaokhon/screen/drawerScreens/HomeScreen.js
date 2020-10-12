@@ -44,9 +44,9 @@ export default class Craigslist extends Component {
 
   render() {
     return(
-      <ScrollView style={styles.scrollView}>
+      <ScrollView>
       <View style={styles.container}>
-          <TouchableOpacity style={styles.container}>
+          <TouchableOpacity>
             <SliderBox
                 images={this.image.images}
                 onCurrentImagePressed={(index) =>
@@ -77,7 +77,7 @@ export default class Craigslist extends Component {
                 <Text style={styles.name}>{item.name}</Text>
                 <Text style={styles.count}>{item.count}</Text>
                 <TouchableOpacity style={styles.followButton} onPress={()=> this.clickEventListener(item)}>
-                  <Text style={styles.followButtonText}>Explore now</Text>  
+                  <Text style={styles.followButtonText}>View</Text>  
                 </TouchableOpacity>
               </View>
             </TouchableOpacity>

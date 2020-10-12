@@ -29,7 +29,7 @@ const CustomSidebarMenu = (props) => {
     },
     {
       navOptionName: 'Detail',
-      screenToNavigate: 'Dtail',
+      screenToNavigate: 'Detail',
     },
     {
       navOptionName: 'Logout',
