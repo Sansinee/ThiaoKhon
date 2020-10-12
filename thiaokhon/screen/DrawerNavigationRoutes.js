@@ -13,6 +13,11 @@ import HomeScreen from './drawerScreens/HomeScreen';
 import SettingsScreen from './drawerScreens/SettingScreen';
 import MainScreen from './drawerScreens/MainScreen';
 import Profile from './drawerScreens/Profile';
+<<<<<<< HEAD
+=======
+import Detail from './drawerScreens/Detail';
+
+>>>>>>> 7839b560cf48517be82c96048c2b276ee2a685cc
 import CustomSidebarMenu from './Components/CustomSidebarMenu';
 import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
 
@@ -70,6 +75,20 @@ const FourActivity_StackNavigator = createStackNavigator({
   },
 });
 
+const FiveActivity_StackNavigator = createStackNavigator({
+  First: {
+    screen: Detail,
+    navigationOptions: ({navigation}) => ({
+      title: 'Detail',
+      headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#307ecc',
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
+
 const DrawerNavigatorRoutes = createDrawerNavigator(
   {
     HomeScreen: {
@@ -96,6 +115,14 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
         drawerLabel: 'Profile',
       },
     },
+    Detail: {
+      screen: FiveActivity_StackNavigator,
+      navigationOptions: {
+        drawerLabel: 'Profile',
+      },
+    },
+
+    
   },
   {
     contentComponent: CustomSidebarMenu,
