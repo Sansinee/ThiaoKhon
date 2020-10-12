@@ -112,6 +112,7 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
         drawerLabel: 'Profile',
       },
     },
+    ///detail///
     Detail: {
       screen: FiveActivity_StackNavigator,
       navigationOptions: {
