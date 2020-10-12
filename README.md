@@ -25,3 +25,9 @@ install
 7. npm i react-native-paper
 
 8. npm i react-native-scroll-view
+   คำสั่งใหม่
+9. npm install react-native-cardview --save
+
+10. npm install react-native-cardview
+
+11. npm install --save react-native-material-cards
