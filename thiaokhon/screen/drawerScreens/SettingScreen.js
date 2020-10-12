@@ -41,11 +41,6 @@ const FlatListBasics = () => {
           </Text>
           <Text style={styles.toolbarButton}>การเดินทาง</Text>
         </View>
-
-        <Text h1>Heading 1</Text>
-        <Text h2>Heading 2</Text>
-        <Text h3>Heading 3</Text>
-        <Text h4>Heading 4</Text>
       </ScrollView>
     </SafeAreaView>
   );
@@ -75,26 +70,3 @@ const styles = StyleSheet.create({
 });
 
 export default FlatListBasics;
-
-/* This is an Login Registration example from https://aboutreact.com/ */
-/* https://aboutreact.com/react-native-login-and-signup/ */
-
-//Import React
-// import React from 'react';
-// //เวรเอ้ย
-// //Import all required component
-// import {View, Text} from 'react-native';
-
-// const MainScreen = () => {
-//   return (
-//     <View style={{flex: 1, alignItems: 'center', marginTop: 100}}>
-//       <Text style={{fontSize: 23, marginTop: 10}}>Main Screen</Text>
-
-//       <Text style={{fontSize: 18, marginTop: 10}}>
-//         Simple Login Registraction Example
-//       </Text>
-//       <Text style={{fontSize: 18, marginTop: 10}}>https://aboutreact</Text>
-//     </View>
-//   );
-// };
-// export default MainScreen;
