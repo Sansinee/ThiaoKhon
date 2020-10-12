@@ -62,19 +62,16 @@ export default class Posts extends Component {
                     <View style={styles.socialBarSection}>
                       <TouchableOpacity style={styles.socialBarButton}>
                         <Image style={styles.icon} source={{uri: 'https://png.icons8.com/android/75/e74c3c/hearts.png'}}/>
-                        <Text style={styles.socialBarLabel}>78</Text>
                       </TouchableOpacity>
                     </View>
                     <View style={styles.socialBarSection}>
                       <TouchableOpacity style={styles.socialBarButton}>
                         <Image style={styles.icon} source={{uri: 'https://png.icons8.com/ios-glyphs/75/2ecc71/comments.png'}}/>
-                        <Text style={styles.socialBarLabel}>25</Text>
                       </TouchableOpacity>
                     </View>
                     <View style={styles.socialBarSection}>
                       <TouchableOpacity style={styles.socialBarButton}>
                         <Image style={styles.icon} source={{uri: 'https://png.icons8.com/metro/75/3498db/administrator-male.png'}}/>
-                        <Text rkType='primary4 hintColor' style={styles.socialBarLabel}>13</Text>
                       </TouchableOpacity>
                     </View>
                   </View>
