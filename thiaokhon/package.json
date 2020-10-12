@@ -20,10 +20,6 @@
     "react-dom": "^16.13.1",
     "react-native": "0.63.2",
     "react-native-atoz-listview": "0.0.7",
-<<<<<<< HEAD
-=======
-    "react-native-button-group": "^1.0.0",
->>>>>>> f3a3aa99a83d0ed87c3de4e2d1a76ab5892f9a55
     "react-native-cardview": "^2.0.5",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-image-slider-box": "^1.0.12",
