@@ -13,11 +13,8 @@ import HomeScreen from './drawerScreens/HomeScreen';
 import SettingsScreen from './drawerScreens/SettingScreen';
 import MainScreen from './drawerScreens/MainScreen';
 import Profile from './drawerScreens/Profile';
-<<<<<<< HEAD
-=======
 import Detail from './drawerScreens/Detail';
 
->>>>>>> 7839b560cf48517be82c96048c2b276ee2a685cc
 import CustomSidebarMenu from './Components/CustomSidebarMenu';
 import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
 
