@@ -45,45 +45,43 @@ export default class Craigslist extends Component {
   render() {
     return(
       <ScrollView>
-      <View style={styles.container}>
-          <TouchableOpacity>
-            <SliderBox
-                images={this.image.images}
-                onCurrentImagePressed={(index) =>
-                  console.warn(`image ${index} pressed`)
-                }
-                autoplay={true}
-                circleLoop={true}
-                dotStyle={styles.dotStyle}
-                dotColor={'black'}
-                inactiveDotColor={'white'}
-                imageLoadingColor={'green'}
-                sliderBoxHeight={300}
-              />
-            </TouchableOpacity>
-        <FlatList 
-          style={styles.contentList}
-          columnWrapperStyle={styles.listContainer}
-          data={this.state.data}
-          keyExtractor= {(item) => {
-            return item.id;
-          }}
-          renderItem={({item}) => {
-          return (
-            <View>
-            <TouchableOpacity style={styles.card} onPress={() => {this.clickEventListener(item)}}>
-              <Image style={styles.image} source={{uri: item.image}}/>
-              <View style={styles.cardContent}>
-                <Text style={styles.name}>{item.name}</Text>
-                <Text style={styles.count}>{item.count}</Text>
-                <TouchableOpacity style={styles.followButton} onPress={()=> this.clickEventListener(item)}>
-                  <Text style={styles.followButtonText}>View</Text>  
-                </TouchableOpacity>
-              </View>
-            </TouchableOpacity>
-            </View>
-          )}}/>
-      </View>
+        <View style={styles.container}>
+            <TouchableOpacity>
+              <SliderBox
+                  images={this.image.images}
+                  onCurrentImagePressed={(index) =>
+                    console.warn(`image ${index} pressed`)
+                  }
+                  autoplay={true}
+                  circleLoop={true}
+                  dotStyle={styles.dotStyle}
+                  dotColor={'black'}
+                  inactiveDotColor={'white'}
+                  imageLoadingColor={'green'}
+                  sliderBoxHeight={300}
+                />
+              </TouchableOpacity>
+          <FlatList 
+            style={styles.contentList}
+            columnWrapperStyle={styles.listContainer}
+            data={this.state.data}
+            keyExtractor= {(item) => {
+              return item.id;
+            }}
+            renderItem={({item}) => {
+            return (
+              <TouchableOpacity style={styles.card} onPress={() => {this.clickEventListener(item)}}>
+                <Image style={styles.image} source={{uri: item.image}}/>
+                <View style={styles.cardContent}>
+                  <Text style={styles.name}>{item.name}</Text>
+                  <Text style={styles.count}>{item.count}</Text>
+                  <TouchableOpacity style={styles.followButton} onPress={()=> this.clickEventListener(item)}>
+                    <Text style={styles.followButtonText}>View</Text>  
+                  </TouchableOpacity>
+                </View>
+              </TouchableOpacity>
+            )}}/>
+        </View>
       </ScrollView>
     );
   }
