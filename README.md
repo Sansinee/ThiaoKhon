@@ -4,30 +4,32 @@ install
 
 !!!!!!!!!!!!!ERROR 500 เช็คชื่อไฟล์ก่อนว่าตรงกันมั้ย!!!!!!!!!!
 
-1. npm install react-navigation --save
-   2.npm install react-native-gesture-handler
-   react-native-safe-area-context @react-native-community/masked-view
-   react-native-screens react-native-reanimated --save
-   3.npm install react-navigation-drawer --save
-   4.npm install react-navigation-stack --save
-   5.npm install --save @react-native-community/async-storage
+npm install react-navigation --save
 
-2. npm install --save react-native-snap-carousel
+npm install react-native-gesture-handler react-native-safe-area-context @react-native-community/masked-view react-native-screens react-native-reanimated --save
 
-3. npm i react-native-swiper --save
+npm install react-navigation-drawer --save
 
-4. npm i --save react-native-swiper@next
+npm install react-navigation-stack --save
 
-5. npm i react-native-image-slider-box
+npm install --save @react-native-community/async-storage
 
-6. npm install react-native-scrollable-tab-view --save
+npm install --save react-native-snap-carousel
 
-7. npm i react-native-paper
+npm i react-native-swiper --save
 
-8. npm i react-native-scroll-view
-   คำสั่งใหม่
-9. npm install react-native-cardview --save
+npm i --save react-native-swiper@next
 
-10. npm install react-native-cardview
+npm i react-native-image-slider-box
 
-11. npm install --save react-native-material-cards
+npm install react-native-scrollable-tab-view --save
+
+npm i react-native-paper
+
+npm i react-native-scroll-view
+
+npm install react-native-cardview --save
+
+npm install react-native-cardview
+
+npm install --save react-native-material-cards
